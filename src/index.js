@@ -8,7 +8,7 @@ import TodoScreen from './components/TodoScreen'
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -40,10 +40,10 @@ function App() {
 
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/sign_up" element={<SignUp />} />
+      <Route path="sign_up" element={<SignUp />} />
     </Routes>
-  </BrowserRouter>
-);
+  </HashRouter>
+)

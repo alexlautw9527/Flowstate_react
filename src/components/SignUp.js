@@ -6,7 +6,7 @@ import Header from './Header.js'
 function FormInput({ children, htmlFor, inputType, onChange }) {
     return (
         <div className="mb-5">
-            <label HtmlFor={htmlFor} className="font-pixel block">
+            <label htmlFor={htmlFor} className="font-pixel block">
                 <p>{children}</p>
                 <input type={inputType} id={htmlFor} name={htmlFor} className='block w-full' onChange={e => { onChange(e, htmlFor) }}></input>
             </label>

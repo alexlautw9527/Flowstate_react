@@ -1,6 +1,8 @@
 import logo from '../img/logo.svg';
 import { domainUrl } from '../config'
 import axios from 'axios';
+import { Link } from "react-router-dom";
+
 
 export default function Header({ userNickname, setToken, children, href }) {
     const header = {
@@ -25,10 +27,12 @@ export default function Header({ userNickname, setToken, children, href }) {
                         <img src={logo} alt="" className='mr-auto w-60' />
                         {window.sessionStorage.getItem('token') !== null ? (
                             <>
-                                <p className='px-5 font-bold'>{`${userNickname}'s todo`}</p>
+                                <p className='px-5 font-bold'>{`${window.sessionStorage.getItem('nickname')}'s todo`}</p>
                                 <p onClick={deleteSignOut} className='cursor-pointer'>log out</p>
                             </>
-                        ) : <a className='px-5 font-bold cursor-pointer' href={href}>{children}</a>}
+                        ) : <Link to={href}>{children}</Link>
+
+                        }
                     </div>
                 </div>
             </div>
