@@ -8,7 +8,7 @@
     @font-face {
         font-family: 'Press Start K';
         font-weight: 400;
-        src: url('../src/fonts/prstartk.ttf') format("ttf");
+        src: local('Press Start K'), url('./fonts/prstartk.ttf');
     }
     
     html, body, label {

@@ -11,9 +11,9 @@ module.exports = {
       fontFamily: {
         'pixel': ['Press Start K'],
       },
-      colors:{
-        primary:'#4A525A',
-        secondary:'#FCF8E8',
+      colors: {
+        primary: '#4A525A',
+        secondary: '#FCF8E8',
         gameboy: '#9ec65a'
       }
     },
