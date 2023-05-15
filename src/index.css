@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans+TC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Noto+Sans+TC&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: 'Press Start K';
-        font-weight: 400;
-        src: local('Press Start K'), url('./fonts/prstartk.ttf');
-    }
-    
-    html, body, label {
-        font-family: 'JetBrains Mono','Noto Sans TC', monospace;
-      }
+  @font-face {
+    font-family: "Press Start K";
+    font-weight: 400;
+    src: local("Press Start K"), url("./fonts/prstartk.ttf");
+  }
 
-      input:checked + div {
-        @apply border-gameboy;
-      }
-      input:checked + div i {
-        @apply block;
-      }
-    
+  html,
+  body,
+  label {
+    font-family: "JetBrains Mono", "Noto Sans TC", monospace;
+  }
+
+  input:checked + div {
+    @apply border-gameboy;
+  }
+  input:checked + div i {
+    @apply block;
+  }
 }
